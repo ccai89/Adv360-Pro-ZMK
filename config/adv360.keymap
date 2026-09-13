@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                               &mo 3                  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &kp LC(LG(RS(LEFT)))                                                 &kp LG(LC(LS(RIGHT)))  &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &none                 &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none                  &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                    &kp HOME      &kp PG_UP                                    &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC              &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                      &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                              &mo 3                  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &kp LC(LG(RS(LEFT)))                                                                &kp LG(LC(LS(RIGHT)))  &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &kp LG(TAB)           &kp LEFT_COMMAND  &kp LALT      &kp RCTRL  &kp RIGHT_COMMAND  &kp LG(GRAVE)          &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                           &kp HOME      &kp PG_UP                                            &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC              &kp DEL           &kp END       &kp PG_DN  &kp ENTER          &kp SPACE                      &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 2
             >;
         };
 
@@ -49,11 +49,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                          &mo 3      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                           &none      &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &kp HOME  &kp UP    &none      &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &kp LEFT                       &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp END   &kp DOWN  &kp RIGHT          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
